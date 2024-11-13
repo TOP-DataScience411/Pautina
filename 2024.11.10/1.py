@@ -19,8 +19,7 @@ def strong_password(password: str) -> bool:
     
 print(strong_password(input()))
 
-#aP3:kD_l3
-#True
-
-#password
-#False
+>>> strong_password('aP3:kD_l3')
+True
+>>> strong_password('password')
+False
