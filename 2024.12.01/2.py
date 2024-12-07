@@ -6,6 +6,8 @@ from chardet import detect
 
 def json_from_html(url: str, pattern: str, encoding: str = 'utf-8') -> Path:
 
+    """ Функция извлекаяет данные из HTML-страницы и сохраняетЫ их в формате JSON."""
+
     with urlopen(url) as response:
         html_bytes = response.read()
     
@@ -47,3 +49,14 @@ print(file_path.name)
 print(file_path.read_text(encoding='utf-8')[:110])
 
 
+#2.json
+#{
+#  "Побег из Шоушенка": "8.9755",
+#  "Зелёная миля": "8.9540",
+# "Форрест Гамп": "8.9035",
+#  "Леон": "8.8920",
+
+#py-modindex.json
+#{
+#  "__future__": "Future statement definitions",
+#  "__main__": "The environment where top-level code is run.
