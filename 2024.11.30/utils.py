@@ -9,12 +9,12 @@ def important_message(text: str) -> str:
 
     text = wrap(text, width = (size - 7))
 
-
     start = f"#{'=' * (size - 3)}#\n#{' ' * (size - 3)}#"
     tx = [f"#  {text[i].center(size - 7)}  #" for i in range(len(text))]
     end = f"#{' ' * (size - 3)}#\n#{'=' * (size - 3)}#"
-    
-    return f"{start}\n{'\n'.join(tx)}\n{end}"
+    backslash = '\n'
+
+    return f"{start}\n{'backslash'.join(tx)}\n{end}"
 
 
 
