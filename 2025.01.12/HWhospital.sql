@@ -43,4 +43,7 @@ ORDER BY dep_id;
 
 6. Вывести сумму пожертвований за каждый год для каждого спонсора с сортировкой по возрастанию номеров спонсоров и годов:
 
-SELECT SUM(amount) as sum_amount_year FROM donations GROUP BY sponsor_id, date_part('year', date) ORDER BY sponsor_id, date_part('year', date);
+SELECT SUM(amount) as sum_amount_year 
+FROM donations 
+GROUP BY sponsor_id, date_part('year', date) 
+ORDER BY sponsor_id, date_part('year', date);
