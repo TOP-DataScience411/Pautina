@@ -37,7 +37,7 @@ def output_results(y_test, y_pred, model_name=None):
     ax.set_ylabel('Предсказанные значения')
     ax.legend()
     ax.grid(True)
-    plt.savefig(dir_path / f'{mod}_real_vs_pred.png', dpi=300, bbox_inches='tight')
+    plt.savefig(dir_path / f'{mod}_real_vs_pred.png', bbox_inches='tight')
     plt.close()
 
 corr_matrix_pearson = data.corr('pearson').round(2)
