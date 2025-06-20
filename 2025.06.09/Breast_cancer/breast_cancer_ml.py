@@ -40,7 +40,7 @@ def output_results(y_test, y_pred):
 
     disp = ConfusionMatrixDisplay(conf_matr, display_labels=['Class 0', 'Class 1'])
     disp.plot(cmap= choice(color))
-    plt.title(f'Breast cancer\n{mod}\nматрица ошибок')
+    plt.title(f'{mod}\nматрица ошибок')
     plt.savefig(dir_path / f'{mod}_conf_matrix.png')
     plt.close()
 
